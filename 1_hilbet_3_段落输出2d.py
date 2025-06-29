@@ -23,7 +23,7 @@ def create_line_segment(start, end, max_len):
     return line_indices
 
 # 加载点云
-pcd_path = "./data/f32f3115a6384201b352a4a7b98a4483/lidar.pcd"
+pcd_path = "./data/752f05ba342c450bb9caadc099dbf192/lidar.pcd"
 pcd = o3d.io.read_point_cloud(pcd_path)
 points = np.asarray(pcd.points)
 
@@ -41,7 +41,7 @@ pcd_hilbert.points = o3d.utility.Vector3dVector(points_hilbert)
 pcd_hilbert.colors = o3d.utility.Vector3dVector(colors[sorted_idx])
 
 # 指定显示的区间
-ranges = [(i, i + 1000) for i in range(0, 21000, 1000)]
+ranges = [(0, 1000), (4000, 5000)]
 
 # 每个区间单独显示
 for idx, (start, end) in enumerate(ranges):

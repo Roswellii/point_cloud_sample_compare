@@ -3,4 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="MAPS_sample" />
   </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="MAPS_point_cloud" project-jdk-type="Python SDK" />
 </project>
